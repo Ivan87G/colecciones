@@ -1,7 +1,10 @@
 package Pelicula.Servicios;
 
 import Pelicula.Entidades.Pelicula;
+import static Pelicula.Utilidades.Comparadores.ordenarPeliPorDir;
+import static Pelicula.Utilidades.Comparadores.ordenarPeliPorTit;
 import java.util.ArrayList;
+import java.util.Collections;
 import java.util.List;
 import java.util.Scanner;
 
@@ -48,7 +51,21 @@ public class PeliServis {
             }
         }
     }
-    
-    
+
+    public void mostrarPelPorTit() {
+        Collections.sort(Pelis, ordenarPeliPorTit);
+        System.out.println("Peliculas Ordenadas Por Nombres");
+        for (Pelicula peli : Pelis) {
+            System.out.println(peli.toString());
+        }
+    }
+
+    public void mostrarPelPorDir() {
+        Collections.sort(Pelis, ordenarPeliPorDir);
+        System.out.println("Peliculas Ordenadas Por Nombre de Director");
+        for (Pelicula peli : Pelis) {
+            System.out.println(peli.toString());
+        }
+    }
 
 }

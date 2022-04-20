@@ -8,14 +8,14 @@ public class Comparadores {
     public static Comparator<Pelicula> ordenarPeliPorTit = new Comparator<Pelicula>() {
         @Override
         public int compare(Pelicula t, Pelicula t1) {
-            return t1.getTitulo().compareTo(t.getTitulo());
+            return t.getTitulo().compareTo(t1.getTitulo());
         }
     };
     
     public static Comparator<Pelicula> ordenarPeliPorDir = new Comparator<Pelicula>() {
         @Override
         public int compare(Pelicula t, Pelicula t1) {
-            return t1.getDirector().compareTo(t.getDirector());
+            return t.getDirector().compareTo(t1.getDirector());
         }
     };
     

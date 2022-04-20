@@ -41,8 +41,10 @@ public class Cine {
         System.out.println("");
         p.mostPM();
         System.out.println("");
+        p.mostrarPelPorTit();
+        System.out.println("");
+        p.mostrarPelPorDir();
         
-        Collections.sort();
         
     }
 }
